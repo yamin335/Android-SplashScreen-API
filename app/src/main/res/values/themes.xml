@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Allows to override night specific attributes in the
+         (values-night) folder. -->
+    <style name="NightAdjusted.Theme.AndroidSplashScreenAPI" parent="android:Theme.Material.Light.NoActionBar" />
 
-    <style name="Theme.AndroidSplashScreenAPI" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- The final theme we use -->
+    <style name="Theme.AndroidSplashScreenAPI" parent="NightAdjusted.Theme.AndroidSplashScreenAPI" />
+
+    <style name="NightAdjusted.Theme.Splash" parent="Theme.SplashScreen">
+        <item name="android:windowLightStatusBar" >true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Theme.AndroidSplashScreenAPI.Splash" parent="NightAdjusted.Theme.Splash">
+        <!-- Use windowSplashScreenAnimatedIcon to add a drawable or an animated
+             drawable. One of these is required. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <!-- Use windowSplashScreenBackground to add a background color to your splash screen -->
+        <item name="windowSplashScreenBackground">@color/purple_200</item>
+        <!-- Required for animated icons. -->
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <!-- Set the theme of the Activity that directly follows your splash
+        screen. This is required. -->
+        <item name="postSplashScreenTheme">@style/Theme.AndroidSplashScreenAPI</item>
+        <item name="android:windowSplashScreenBehavior" tools:targetApi="33">icon_preferred</item>
+    </style>
+
 </resources>
