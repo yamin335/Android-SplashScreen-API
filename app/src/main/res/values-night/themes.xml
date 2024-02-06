@@ -4,5 +4,6 @@
     <style name="NightAdjusted.Theme.Splash" parent="Theme.SplashScreen">
         <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
         <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+        <item name="windowSplashScreenBackground">@color/ic_launcher_background_tint</item>
     </style>
 </resources>

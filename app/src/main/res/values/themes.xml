@@ -17,7 +17,7 @@
              drawable. One of these is required. -->
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
         <!-- Use windowSplashScreenBackground to add a background color to your splash screen -->
-        <item name="windowSplashScreenBackground">@color/purple_200</item>
+        <item name="windowSplashScreenBackground">@color/ic_launcher_background_tint</item>
         <!-- Required for animated icons. -->
         <item name="windowSplashScreenAnimationDuration">1000</item>
         <!-- Set the theme of the Activity that directly follows your splash

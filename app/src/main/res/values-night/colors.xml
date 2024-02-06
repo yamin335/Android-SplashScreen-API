@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background_tint">#141414</color>
+    <color name="ic_launcher_foreground_tint">#FFFFFF</color>
+    <color name="ic_launcher_foreground_shadow_tint1">#44FFFFFF</color>
+    <color name="ic_launcher_foreground_shadow_tint2">#00FFFFFF</color>
+    <color name="ic_launcher_foreground_stroke_tint">#00FFFFFF</color>
+</resources>
